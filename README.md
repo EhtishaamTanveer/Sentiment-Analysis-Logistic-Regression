@@ -30,6 +30,7 @@ The dataset used in this project contains textual data (e.g., product reviews, t
 
 ### Files in the Repository
    - sentiment-analysis-lr.ipynb: The jupyter notebook containing the project code
+   - utils.py: Contains the helper functions that utilized in the main notebook
    -  README.md: This file.
 
 ## Model Performance
