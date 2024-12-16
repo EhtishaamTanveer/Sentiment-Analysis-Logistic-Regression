@@ -14,34 +14,43 @@ This project performs basic Sentiment Analysis on text data (tweets) using the L
 ### Dataset
 
 The dataset used in this project contains textual data (e.g., product reviews, tweets, or movie reviews) that are labeled as positive or negative. You can use any publicly available dataset for sentiment analysis (e.g., the IMDB reviews dataset or Twitter sentiment dataset).
-Steps in the Project
 
-  Data Preprocessing:
-      Text Cleaning: Removing special characters, numbers, and stopwords.
-      Tokenization: Breaking text into individual words.
-      Vectorization: Using techniques like TF-IDF or CountVectorizer to convert text data into numeric form suitable for machine learning models.
+### Steps in the Project
 
-  Model Training:
-      Logistic Regression is trained on the vectorized text data to predict sentiment labels.
+* Data Preprocessing:
+    - Train-Test Splitting: Dividing the dataset into training and testing parts
+    - Text Cleaning: Removing special characters, numbers, and stopwords.
+    - Tokenization: Breaking text into individual words.
 
-  Model Evaluation:
-      The model's performance is evaluated on a held-out test set using metrics like accuracy, precision, recall, and F1-score.
+* Model Training:
+    - Logistic Regression is trained on the processed text data to predict sentiment labels.
 
-Files in the Repository
+* Model Evaluation:
+    - The model's performance is evaluated on a held-out test set using the accuracy metric.
 
-  data/: Folder containing the dataset (or links to download the dataset).
-  src/: Folder with the main code files for data processing, model training, and evaluation.
-      preprocessing.py: Code for cleaning and preparing text data.
-      train_model.py: Code for training the Logistic Regression model.
-      evaluate.py: Code for evaluating the model's performance.
-  notebooks/: Jupyter notebooks for experimentation and analysis.
-  requirements.txt: List of Python dependencies needed for the project.
-  README.md: This file.
-    
+### Files in the Repository
+   - sentiment-analysis-lr.ipynb: The jupyter notebook containing the project code
+   -  README.md: This file.
+
+## Model Performance
+Once the model is trained and evaluated, the results will be displayed, showing how well the model performs on the test set. Error Analysis is also performed to observe which tweets from the test set were incorrectly classified. Additionally, users will be allowed to type in their own tweets and let the trained model classify it.
+
+### Sample Output
+- Logistic regression model's accuracy = 99.50 %
+
+The accuracy metric helps you understand how well the model is classifying the sentiment of the text.
+
+### Example
+**Input Text:** "This is a ridiculously bright movie. The plot was terrible and I was sad until the ending!"
+
+**Predicted Sentiment:** Negative 
+
 ## Acknowledgements
 
 * Dataset sources:
+  * [Twitter](https://www.x.com)   
   * [Coursera](https://www.coursera.org/)
+    
 * Libraries used:
   * NumPy for vectorized calculations.
   * Pandas for data handling.
